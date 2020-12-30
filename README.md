@@ -11,7 +11,7 @@
 
 
 ```ts
-imoprt { KubeSphere } from 'cdk-kubesphere';
+import { KubeSphere } from 'cdk-kubesphere';
 
 const app = new cdk.App();
 
