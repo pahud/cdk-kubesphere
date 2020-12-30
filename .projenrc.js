@@ -20,6 +20,16 @@ const project = new AwsCdkConstructLibrary({
     distName: 'cdk-kubesphere',
     module: 'cdk_kubesphere',
   },
+  keywords: [
+    'cdk',
+    'kubesphere',
+    'kubernetes',
+    'eks',
+  ],
+  catalog: {
+    announce: false,
+    twitter: 'pahudnet',
+  },
 });
 
 // create a custom projen and yarn upgrade workflow
