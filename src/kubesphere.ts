@@ -2,10 +2,19 @@ import * as ec2 from '@aws-cdk/aws-ec2';
 import * as eks from '@aws-cdk/aws-eks';
 import * as cdk from '@aws-cdk/core';
 
+/**
+ * The construct properties for KubeSphere
+ */
 export interface KubeSphereProps {
+  /**
+   * The existing Amazon EKS cluster(if any)
+   */
   readonly cluster?: eks.ICluster;
 }
 
+/**
+ * The KubeSphere workload
+ */
 export class KubeSphere extends cdk.Construct {
   constructor(scope: cdk.Construct, id: string, props: KubeSphereProps = {}) {
     super(scope, id);
