@@ -23,6 +23,16 @@ new KubeSphere(stack, 'KubeSphere');
 
 Behind the scene, the `KubeSphere` construct creates a default Amazon EKS cluster and `KubeSphere` serivce with helm chart([ks-installer](https://github.com/kubesphere/ks-installer)) on it.
 
+## KubeSphere App Store support
+
+Use `appStore` to enable the [KubeSphere App Store](https://kubesphere.io/docs/pluggable-components/app-store/) support.
+
+```ts
+new KubeSphere(stack, 'KubeSphere', { 
+  appStore: true,
+});
+```
+
 # Using existing Amazon EKS clusters
 
 You are allowed to deploy `KubeSphere` in any existing Amazon EKS cluster. 
