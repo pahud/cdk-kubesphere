@@ -642,7 +642,7 @@ Object {
             "Outputs.cdkkubespheredemoawscdkawseksKubectlProviderframeworkonEvent4130AB63Arn",
           ],
         },
-        "Values": "{\\"openpitrix\\":{\\"enable\\":true}}",
+        "Values": "{\\"openpitrix.enable\\":true}",
       },
       "Type": "Custom::AWSCDK-EKS-HelmChart",
       "UpdateReplacePolicy": "Delete",

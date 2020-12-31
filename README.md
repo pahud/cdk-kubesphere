@@ -23,7 +23,20 @@ new KubeSphere(stack, 'KubeSphere');
 
 Behind the scene, the `KubeSphere` construct creates a default Amazon EKS cluster and `KubeSphere` serivce with helm chart([ks-installer](https://github.com/kubesphere/ks-installer)) on it.
 
-## KubeSphere App Store support
+<details>
+<summary>View helm command</summary>
+AWS CDK will helm install the `ks-installer`  on the cluster:
+
+```sh
+helm install ks-installer \
+--repo https://charts.kubesphere.io/test \
+--namespace=kubesphere-system \
+--generate-name \
+--create-namespace
+```
+</details>
+
+## KubeSphere App Store
 
 Use `appStore` to enable the [KubeSphere App Store](https://kubesphere.io/docs/pluggable-components/app-store/) support.
 
@@ -32,6 +45,20 @@ new KubeSphere(stack, 'KubeSphere', {
   appStore: true,
 });
 ```
+
+<details>
+<summary>View helm command</summary>
+AWS CDK will helm install the `ks-installer`  on the cluster:
+
+```sh
+helm install ks-installer \
+--set openpitrix.enable=true \
+--repo https://charts.kubesphere.io/test \
+--namespace=kubesphere-system \
+--generate-name \
+--create-namespace
+```
+</details>
 
 # Using existing Amazon EKS clusters
 
