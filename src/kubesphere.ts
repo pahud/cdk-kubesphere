@@ -32,7 +32,7 @@ export class KubeSphere extends cdk.Construct {
       chart: 'ks-installer',
       namespace: 'kubesphere-system',
       values: {
-        'openpitrix.enable': props.appStore ?? false,
+        'openpitrix.enabled': props.appStore ?? false,
       },
     });
   }
