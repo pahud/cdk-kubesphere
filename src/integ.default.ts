@@ -14,10 +14,12 @@ export class IntegTesting {
     const stack = new cdk.Stack(app, 'cdk-kubesphere-demo', { env });
 
     // create a default KubeSphere on a new Amazon EKS cluster
-    new KubeSphere(stack, 'KubeSphere');
+    new KubeSphere(stack, 'KubeSphere', {
+      appStore: true,
+    });
 
     this.stack = [stack];
   }
 }
 
-
+new IntegTesting();

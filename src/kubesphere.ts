@@ -8,8 +8,14 @@ import * as cdk from '@aws-cdk/core';
 export interface KubeSphereProps {
   /**
    * The existing Amazon EKS cluster(if any)
+   * @default - create a default new cluster
    */
   readonly cluster?: eks.ICluster;
+  /**
+   * whether to enable the KubeSphere Application Store(openpitrix)
+   * @default false
+   */
+  readonly appStore?: boolean;
 }
 
 /**
@@ -25,10 +31,13 @@ export class KubeSphere extends cdk.Construct {
       repository: 'https://charts.kubesphere.io/test',
       chart: 'ks-installer',
       namespace: 'kubesphere-system',
+      values: {
+        'openpitrix.enable': props.appStore ?? false,
+      },
     });
   }
   private _createEksCluster(): eks.Cluster {
-    const vpc = getOrCreateVpc(this);
+    const vpc = getOrCreateVpc(cdk.Stack.of(this));
     return new eks.Cluster(this, 'Cluster', {
       vpc,
       version: eks.KubernetesVersion.V1_18,

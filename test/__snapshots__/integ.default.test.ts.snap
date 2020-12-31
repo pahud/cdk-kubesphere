@@ -65,16 +65,16 @@ Object {
       "Description": "S3 key for asset version \\"50e10880d134a01b440991fc77d217f39f01c2d56945215ee9a3b81187c6f3b1\\"",
       "Type": "String",
     },
-    "AssetParameters75e9f2dd8b63803774f165cb1228c1a425b40f88fb9201d3fe3bc1c76f71a901ArtifactHash36B1993F": Object {
-      "Description": "Artifact hash for asset \\"75e9f2dd8b63803774f165cb1228c1a425b40f88fb9201d3fe3bc1c76f71a901\\"",
+    "AssetParameters8fac04a56beb222bd94492302aabd6154c5783061b2bc05303e1a5269ab56d90ArtifactHash4F1197BA": Object {
+      "Description": "Artifact hash for asset \\"8fac04a56beb222bd94492302aabd6154c5783061b2bc05303e1a5269ab56d90\\"",
       "Type": "String",
     },
-    "AssetParameters75e9f2dd8b63803774f165cb1228c1a425b40f88fb9201d3fe3bc1c76f71a901S3Bucket24ABF842": Object {
-      "Description": "S3 bucket for asset \\"75e9f2dd8b63803774f165cb1228c1a425b40f88fb9201d3fe3bc1c76f71a901\\"",
+    "AssetParameters8fac04a56beb222bd94492302aabd6154c5783061b2bc05303e1a5269ab56d90S3BucketFBD1D438": Object {
+      "Description": "S3 bucket for asset \\"8fac04a56beb222bd94492302aabd6154c5783061b2bc05303e1a5269ab56d90\\"",
       "Type": "String",
     },
-    "AssetParameters75e9f2dd8b63803774f165cb1228c1a425b40f88fb9201d3fe3bc1c76f71a901S3VersionKey9D3470C9": Object {
-      "Description": "S3 key for asset version \\"75e9f2dd8b63803774f165cb1228c1a425b40f88fb9201d3fe3bc1c76f71a901\\"",
+    "AssetParameters8fac04a56beb222bd94492302aabd6154c5783061b2bc05303e1a5269ab56d90S3VersionKey67C00C6B": Object {
+      "Description": "S3 key for asset version \\"8fac04a56beb222bd94492302aabd6154c5783061b2bc05303e1a5269ab56d90\\"",
       "Type": "String",
     },
     "AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cArtifactHash627DAAA7": Object {
@@ -176,27 +176,27 @@ Object {
       "DependsOn": Array [
         "KubeSphereClusterCreationRoleDefaultPolicy6A5D1D09",
         "KubeSphereClusterCreationRoleB5917583",
-        "KubeSphereVpcIGW08C7B4A6",
-        "KubeSphereVpcPrivateSubnet1DefaultRoute504DBDE8",
-        "KubeSphereVpcPrivateSubnet1RouteTable142E1A15",
-        "KubeSphereVpcPrivateSubnet1RouteTableAssociation24E34031",
-        "KubeSphereVpcPrivateSubnet1SubnetFEEA6FFC",
-        "KubeSphereVpcPrivateSubnet2DefaultRouteCF538253",
-        "KubeSphereVpcPrivateSubnet2RouteTable395B0FAD",
-        "KubeSphereVpcPrivateSubnet2RouteTableAssociation3138C9BB",
-        "KubeSphereVpcPrivateSubnet2Subnet81DBE3CA",
-        "KubeSphereVpcPublicSubnet1DefaultRoute16932D71",
-        "KubeSphereVpcPublicSubnet1EIP9643713F",
-        "KubeSphereVpcPublicSubnet1NATGateway706B21E7",
-        "KubeSphereVpcPublicSubnet1RouteTable696A681D",
-        "KubeSphereVpcPublicSubnet1RouteTableAssociationAA3A406D",
-        "KubeSphereVpcPublicSubnet1SubnetC1EA986F",
-        "KubeSphereVpcPublicSubnet2DefaultRoute12A51027",
-        "KubeSphereVpcPublicSubnet2RouteTableE783DA31",
-        "KubeSphereVpcPublicSubnet2RouteTableAssociation77B82023",
-        "KubeSphereVpcPublicSubnet2SubnetCBB8AE29",
-        "KubeSphereVpcB890D1D0",
-        "KubeSphereVpcVPCGW3241682B",
+        "VpcIGWD7BA715C",
+        "VpcPrivateSubnet1DefaultRouteBE02A9ED",
+        "VpcPrivateSubnet1RouteTableB2C5B500",
+        "VpcPrivateSubnet1RouteTableAssociation70C59FA6",
+        "VpcPrivateSubnet1Subnet536B997A",
+        "VpcPrivateSubnet2DefaultRoute060D2087",
+        "VpcPrivateSubnet2RouteTableA678073B",
+        "VpcPrivateSubnet2RouteTableAssociationA89CAD56",
+        "VpcPrivateSubnet2Subnet3788AAA1",
+        "VpcPublicSubnet1DefaultRoute3DA9E72A",
+        "VpcPublicSubnet1EIPD7E02669",
+        "VpcPublicSubnet1NATGateway4D7517AA",
+        "VpcPublicSubnet1RouteTable6C95E38E",
+        "VpcPublicSubnet1RouteTableAssociation97140677",
+        "VpcPublicSubnet1Subnet5C2D37C4",
+        "VpcPublicSubnet2DefaultRoute97F91067",
+        "VpcPublicSubnet2RouteTable94F7E489",
+        "VpcPublicSubnet2RouteTableAssociationDD5762D8",
+        "VpcPublicSubnet2Subnet691E08A3",
+        "Vpc8378EB38",
+        "VpcVPCGWBF912B6E",
       ],
       "Properties": Object {
         "AssumeRoleArn": Object {
@@ -220,16 +220,16 @@ Object {
             ],
             "subnetIds": Array [
               Object {
-                "Ref": "KubeSphereVpcPublicSubnet1SubnetC1EA986F",
+                "Ref": "VpcPublicSubnet1Subnet5C2D37C4",
               },
               Object {
-                "Ref": "KubeSphereVpcPublicSubnet2SubnetCBB8AE29",
+                "Ref": "VpcPublicSubnet2Subnet691E08A3",
               },
               Object {
-                "Ref": "KubeSphereVpcPrivateSubnet1SubnetFEEA6FFC",
+                "Ref": "VpcPrivateSubnet1Subnet536B997A",
               },
               Object {
-                "Ref": "KubeSphereVpcPrivateSubnet2Subnet81DBE3CA",
+                "Ref": "VpcPrivateSubnet2Subnet3788AAA1",
               },
             ],
           },
@@ -262,34 +262,34 @@ Object {
           },
         ],
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::SecurityGroup",
     },
     "KubeSphereClusterCreationRoleB5917583": Object {
       "DependsOn": Array [
-        "KubeSphereVpcIGW08C7B4A6",
-        "KubeSphereVpcPrivateSubnet1DefaultRoute504DBDE8",
-        "KubeSphereVpcPrivateSubnet1RouteTable142E1A15",
-        "KubeSphereVpcPrivateSubnet1RouteTableAssociation24E34031",
-        "KubeSphereVpcPrivateSubnet1SubnetFEEA6FFC",
-        "KubeSphereVpcPrivateSubnet2DefaultRouteCF538253",
-        "KubeSphereVpcPrivateSubnet2RouteTable395B0FAD",
-        "KubeSphereVpcPrivateSubnet2RouteTableAssociation3138C9BB",
-        "KubeSphereVpcPrivateSubnet2Subnet81DBE3CA",
-        "KubeSphereVpcPublicSubnet1DefaultRoute16932D71",
-        "KubeSphereVpcPublicSubnet1EIP9643713F",
-        "KubeSphereVpcPublicSubnet1NATGateway706B21E7",
-        "KubeSphereVpcPublicSubnet1RouteTable696A681D",
-        "KubeSphereVpcPublicSubnet1RouteTableAssociationAA3A406D",
-        "KubeSphereVpcPublicSubnet1SubnetC1EA986F",
-        "KubeSphereVpcPublicSubnet2DefaultRoute12A51027",
-        "KubeSphereVpcPublicSubnet2RouteTableE783DA31",
-        "KubeSphereVpcPublicSubnet2RouteTableAssociation77B82023",
-        "KubeSphereVpcPublicSubnet2SubnetCBB8AE29",
-        "KubeSphereVpcB890D1D0",
-        "KubeSphereVpcVPCGW3241682B",
+        "VpcIGWD7BA715C",
+        "VpcPrivateSubnet1DefaultRouteBE02A9ED",
+        "VpcPrivateSubnet1RouteTableB2C5B500",
+        "VpcPrivateSubnet1RouteTableAssociation70C59FA6",
+        "VpcPrivateSubnet1Subnet536B997A",
+        "VpcPrivateSubnet2DefaultRoute060D2087",
+        "VpcPrivateSubnet2RouteTableA678073B",
+        "VpcPrivateSubnet2RouteTableAssociationA89CAD56",
+        "VpcPrivateSubnet2Subnet3788AAA1",
+        "VpcPublicSubnet1DefaultRoute3DA9E72A",
+        "VpcPublicSubnet1EIPD7E02669",
+        "VpcPublicSubnet1NATGateway4D7517AA",
+        "VpcPublicSubnet1RouteTable6C95E38E",
+        "VpcPublicSubnet1RouteTableAssociation97140677",
+        "VpcPublicSubnet1Subnet5C2D37C4",
+        "VpcPublicSubnet2DefaultRoute97F91067",
+        "VpcPublicSubnet2RouteTable94F7E489",
+        "VpcPublicSubnet2RouteTableAssociationDD5762D8",
+        "VpcPublicSubnet2Subnet691E08A3",
+        "Vpc8378EB38",
+        "VpcVPCGWBF912B6E",
       ],
       "Properties": Object {
         "AssumeRolePolicyDocument": Object {
@@ -324,27 +324,27 @@ Object {
     },
     "KubeSphereClusterCreationRoleDefaultPolicy6A5D1D09": Object {
       "DependsOn": Array [
-        "KubeSphereVpcIGW08C7B4A6",
-        "KubeSphereVpcPrivateSubnet1DefaultRoute504DBDE8",
-        "KubeSphereVpcPrivateSubnet1RouteTable142E1A15",
-        "KubeSphereVpcPrivateSubnet1RouteTableAssociation24E34031",
-        "KubeSphereVpcPrivateSubnet1SubnetFEEA6FFC",
-        "KubeSphereVpcPrivateSubnet2DefaultRouteCF538253",
-        "KubeSphereVpcPrivateSubnet2RouteTable395B0FAD",
-        "KubeSphereVpcPrivateSubnet2RouteTableAssociation3138C9BB",
-        "KubeSphereVpcPrivateSubnet2Subnet81DBE3CA",
-        "KubeSphereVpcPublicSubnet1DefaultRoute16932D71",
-        "KubeSphereVpcPublicSubnet1EIP9643713F",
-        "KubeSphereVpcPublicSubnet1NATGateway706B21E7",
-        "KubeSphereVpcPublicSubnet1RouteTable696A681D",
-        "KubeSphereVpcPublicSubnet1RouteTableAssociationAA3A406D",
-        "KubeSphereVpcPublicSubnet1SubnetC1EA986F",
-        "KubeSphereVpcPublicSubnet2DefaultRoute12A51027",
-        "KubeSphereVpcPublicSubnet2RouteTableE783DA31",
-        "KubeSphereVpcPublicSubnet2RouteTableAssociation77B82023",
-        "KubeSphereVpcPublicSubnet2SubnetCBB8AE29",
-        "KubeSphereVpcB890D1D0",
-        "KubeSphereVpcVPCGW3241682B",
+        "VpcIGWD7BA715C",
+        "VpcPrivateSubnet1DefaultRouteBE02A9ED",
+        "VpcPrivateSubnet1RouteTableB2C5B500",
+        "VpcPrivateSubnet1RouteTableAssociation70C59FA6",
+        "VpcPrivateSubnet1Subnet536B997A",
+        "VpcPrivateSubnet2DefaultRoute060D2087",
+        "VpcPrivateSubnet2RouteTableA678073B",
+        "VpcPrivateSubnet2RouteTableAssociationA89CAD56",
+        "VpcPrivateSubnet2Subnet3788AAA1",
+        "VpcPublicSubnet1DefaultRoute3DA9E72A",
+        "VpcPublicSubnet1EIPD7E02669",
+        "VpcPublicSubnet1NATGateway4D7517AA",
+        "VpcPublicSubnet1RouteTable6C95E38E",
+        "VpcPublicSubnet1RouteTableAssociation97140677",
+        "VpcPublicSubnet1Subnet5C2D37C4",
+        "VpcPublicSubnet2DefaultRoute97F91067",
+        "VpcPublicSubnet2RouteTable94F7E489",
+        "VpcPublicSubnet2RouteTableAssociationDD5762D8",
+        "VpcPublicSubnet2Subnet691E08A3",
+        "Vpc8378EB38",
+        "VpcVPCGWBF912B6E",
       ],
       "Properties": Object {
         "PolicyDocument": Object {
@@ -426,7 +426,7 @@ Object {
                     },
                     ":vpc/",
                     Object {
-                      "Ref": "KubeSphereVpcB890D1D0",
+                      "Ref": "Vpc8378EB38",
                     },
                   ],
                 ],
@@ -511,10 +511,10 @@ Object {
         },
         "Subnets": Array [
           Object {
-            "Ref": "KubeSphereVpcPrivateSubnet1SubnetFEEA6FFC",
+            "Ref": "VpcPrivateSubnet1Subnet536B997A",
           },
           Object {
-            "Ref": "KubeSphereVpcPrivateSubnet2Subnet81DBE3CA",
+            "Ref": "VpcPrivateSubnet2Subnet3788AAA1",
           },
         ],
       },
@@ -642,11 +642,12 @@ Object {
             "Outputs.cdkkubespheredemoawscdkawseksKubectlProviderframeworkonEvent4130AB63Arn",
           ],
         },
+        "Values": "{\\"openpitrix.enable\\":true}",
       },
       "Type": "Custom::AWSCDK-EKS-HelmChart",
       "UpdateReplacePolicy": "Delete",
     },
-    "KubeSphereVpcB890D1D0": Object {
+    "Vpc8378EB38": Object {
       "Properties": Object {
         "CidrBlock": "10.0.0.0/16",
         "EnableDnsHostnames": true,
@@ -655,36 +656,47 @@ Object {
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc",
+            "Value": "cdk-kubesphere-demo/Vpc",
           },
         ],
       },
       "Type": "AWS::EC2::VPC",
     },
-    "KubeSphereVpcIGW08C7B4A6": Object {
+    "VpcIGWD7BA715C": Object {
       "Properties": Object {
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc",
+            "Value": "cdk-kubesphere-demo/Vpc",
           },
         ],
       },
       "Type": "AWS::EC2::InternetGateway",
     },
-    "KubeSphereVpcPrivateSubnet1DefaultRoute504DBDE8": Object {
+    "VpcPrivateSubnet1DefaultRouteBE02A9ED": Object {
       "Properties": Object {
         "DestinationCidrBlock": "0.0.0.0/0",
         "NatGatewayId": Object {
-          "Ref": "KubeSphereVpcPublicSubnet1NATGateway706B21E7",
+          "Ref": "VpcPublicSubnet1NATGateway4D7517AA",
         },
         "RouteTableId": Object {
-          "Ref": "KubeSphereVpcPrivateSubnet1RouteTable142E1A15",
+          "Ref": "VpcPrivateSubnet1RouteTableB2C5B500",
         },
       },
       "Type": "AWS::EC2::Route",
     },
-    "KubeSphereVpcPrivateSubnet1RouteTable142E1A15": Object {
+    "VpcPrivateSubnet1RouteTableAssociation70C59FA6": Object {
+      "Properties": Object {
+        "RouteTableId": Object {
+          "Ref": "VpcPrivateSubnet1RouteTableB2C5B500",
+        },
+        "SubnetId": Object {
+          "Ref": "VpcPrivateSubnet1Subnet536B997A",
+        },
+      },
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+    },
+    "VpcPrivateSubnet1RouteTableB2C5B500": Object {
       "Properties": Object {
         "Tags": Array [
           Object {
@@ -693,27 +705,16 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PrivateSubnet1",
+            "Value": "cdk-kubesphere-demo/Vpc/PrivateSubnet1",
           },
         ],
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::RouteTable",
     },
-    "KubeSphereVpcPrivateSubnet1RouteTableAssociation24E34031": Object {
-      "Properties": Object {
-        "RouteTableId": Object {
-          "Ref": "KubeSphereVpcPrivateSubnet1RouteTable142E1A15",
-        },
-        "SubnetId": Object {
-          "Ref": "KubeSphereVpcPrivateSubnet1SubnetFEEA6FFC",
-        },
-      },
-      "Type": "AWS::EC2::SubnetRouteTableAssociation",
-    },
-    "KubeSphereVpcPrivateSubnet1SubnetFEEA6FFC": Object {
+    "VpcPrivateSubnet1Subnet536B997A": Object {
       "Properties": Object {
         "AvailabilityZone": Object {
           "Fn::Select": Array [
@@ -740,28 +741,28 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PrivateSubnet1",
+            "Value": "cdk-kubesphere-demo/Vpc/PrivateSubnet1",
           },
         ],
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::Subnet",
     },
-    "KubeSphereVpcPrivateSubnet2DefaultRouteCF538253": Object {
+    "VpcPrivateSubnet2DefaultRoute060D2087": Object {
       "Properties": Object {
         "DestinationCidrBlock": "0.0.0.0/0",
         "NatGatewayId": Object {
-          "Ref": "KubeSphereVpcPublicSubnet1NATGateway706B21E7",
+          "Ref": "VpcPublicSubnet1NATGateway4D7517AA",
         },
         "RouteTableId": Object {
-          "Ref": "KubeSphereVpcPrivateSubnet2RouteTable395B0FAD",
+          "Ref": "VpcPrivateSubnet2RouteTableA678073B",
         },
       },
       "Type": "AWS::EC2::Route",
     },
-    "KubeSphereVpcPrivateSubnet2RouteTable395B0FAD": Object {
+    "VpcPrivateSubnet2RouteTableA678073B": Object {
       "Properties": Object {
         "Tags": Array [
           Object {
@@ -770,27 +771,27 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PrivateSubnet2",
+            "Value": "cdk-kubesphere-demo/Vpc/PrivateSubnet2",
           },
         ],
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::RouteTable",
     },
-    "KubeSphereVpcPrivateSubnet2RouteTableAssociation3138C9BB": Object {
+    "VpcPrivateSubnet2RouteTableAssociationA89CAD56": Object {
       "Properties": Object {
         "RouteTableId": Object {
-          "Ref": "KubeSphereVpcPrivateSubnet2RouteTable395B0FAD",
+          "Ref": "VpcPrivateSubnet2RouteTableA678073B",
         },
         "SubnetId": Object {
-          "Ref": "KubeSphereVpcPrivateSubnet2Subnet81DBE3CA",
+          "Ref": "VpcPrivateSubnet2Subnet3788AAA1",
         },
       },
       "Type": "AWS::EC2::SubnetRouteTableAssociation",
     },
-    "KubeSphereVpcPrivateSubnet2Subnet81DBE3CA": Object {
+    "VpcPrivateSubnet2Subnet3788AAA1": Object {
       "Properties": Object {
         "AvailabilityZone": Object {
           "Fn::Select": Array [
@@ -817,31 +818,31 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PrivateSubnet2",
+            "Value": "cdk-kubesphere-demo/Vpc/PrivateSubnet2",
           },
         ],
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::Subnet",
     },
-    "KubeSphereVpcPublicSubnet1DefaultRoute16932D71": Object {
+    "VpcPublicSubnet1DefaultRoute3DA9E72A": Object {
       "DependsOn": Array [
-        "KubeSphereVpcVPCGW3241682B",
+        "VpcVPCGWBF912B6E",
       ],
       "Properties": Object {
         "DestinationCidrBlock": "0.0.0.0/0",
         "GatewayId": Object {
-          "Ref": "KubeSphereVpcIGW08C7B4A6",
+          "Ref": "VpcIGWD7BA715C",
         },
         "RouteTableId": Object {
-          "Ref": "KubeSphereVpcPublicSubnet1RouteTable696A681D",
+          "Ref": "VpcPublicSubnet1RouteTable6C95E38E",
         },
       },
       "Type": "AWS::EC2::Route",
     },
-    "KubeSphereVpcPublicSubnet1EIP9643713F": Object {
+    "VpcPublicSubnet1EIPD7E02669": Object {
       "Properties": Object {
         "Domain": "vpc",
         "Tags": Array [
@@ -851,22 +852,22 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PublicSubnet1",
+            "Value": "cdk-kubesphere-demo/Vpc/PublicSubnet1",
           },
         ],
       },
       "Type": "AWS::EC2::EIP",
     },
-    "KubeSphereVpcPublicSubnet1NATGateway706B21E7": Object {
+    "VpcPublicSubnet1NATGateway4D7517AA": Object {
       "Properties": Object {
         "AllocationId": Object {
           "Fn::GetAtt": Array [
-            "KubeSphereVpcPublicSubnet1EIP9643713F",
+            "VpcPublicSubnet1EIPD7E02669",
             "AllocationId",
           ],
         },
         "SubnetId": Object {
-          "Ref": "KubeSphereVpcPublicSubnet1SubnetC1EA986F",
+          "Ref": "VpcPublicSubnet1Subnet5C2D37C4",
         },
         "Tags": Array [
           Object {
@@ -875,13 +876,13 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PublicSubnet1",
+            "Value": "cdk-kubesphere-demo/Vpc/PublicSubnet1",
           },
         ],
       },
       "Type": "AWS::EC2::NatGateway",
     },
-    "KubeSphereVpcPublicSubnet1RouteTable696A681D": Object {
+    "VpcPublicSubnet1RouteTable6C95E38E": Object {
       "Properties": Object {
         "Tags": Array [
           Object {
@@ -890,27 +891,27 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PublicSubnet1",
+            "Value": "cdk-kubesphere-demo/Vpc/PublicSubnet1",
           },
         ],
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::RouteTable",
     },
-    "KubeSphereVpcPublicSubnet1RouteTableAssociationAA3A406D": Object {
+    "VpcPublicSubnet1RouteTableAssociation97140677": Object {
       "Properties": Object {
         "RouteTableId": Object {
-          "Ref": "KubeSphereVpcPublicSubnet1RouteTable696A681D",
+          "Ref": "VpcPublicSubnet1RouteTable6C95E38E",
         },
         "SubnetId": Object {
-          "Ref": "KubeSphereVpcPublicSubnet1SubnetC1EA986F",
+          "Ref": "VpcPublicSubnet1Subnet5C2D37C4",
         },
       },
       "Type": "AWS::EC2::SubnetRouteTableAssociation",
     },
-    "KubeSphereVpcPublicSubnet1SubnetC1EA986F": Object {
+    "VpcPublicSubnet1Subnet5C2D37C4": Object {
       "Properties": Object {
         "AvailabilityZone": Object {
           "Fn::Select": Array [
@@ -937,42 +938,31 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PublicSubnet1",
+            "Value": "cdk-kubesphere-demo/Vpc/PublicSubnet1",
           },
         ],
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::Subnet",
     },
-    "KubeSphereVpcPublicSubnet2DefaultRoute12A51027": Object {
+    "VpcPublicSubnet2DefaultRoute97F91067": Object {
       "DependsOn": Array [
-        "KubeSphereVpcVPCGW3241682B",
+        "VpcVPCGWBF912B6E",
       ],
       "Properties": Object {
         "DestinationCidrBlock": "0.0.0.0/0",
         "GatewayId": Object {
-          "Ref": "KubeSphereVpcIGW08C7B4A6",
+          "Ref": "VpcIGWD7BA715C",
         },
         "RouteTableId": Object {
-          "Ref": "KubeSphereVpcPublicSubnet2RouteTableE783DA31",
+          "Ref": "VpcPublicSubnet2RouteTable94F7E489",
         },
       },
       "Type": "AWS::EC2::Route",
     },
-    "KubeSphereVpcPublicSubnet2RouteTableAssociation77B82023": Object {
-      "Properties": Object {
-        "RouteTableId": Object {
-          "Ref": "KubeSphereVpcPublicSubnet2RouteTableE783DA31",
-        },
-        "SubnetId": Object {
-          "Ref": "KubeSphereVpcPublicSubnet2SubnetCBB8AE29",
-        },
-      },
-      "Type": "AWS::EC2::SubnetRouteTableAssociation",
-    },
-    "KubeSphereVpcPublicSubnet2RouteTableE783DA31": Object {
+    "VpcPublicSubnet2RouteTable94F7E489": Object {
       "Properties": Object {
         "Tags": Array [
           Object {
@@ -981,16 +971,27 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PublicSubnet2",
+            "Value": "cdk-kubesphere-demo/Vpc/PublicSubnet2",
           },
         ],
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::RouteTable",
     },
-    "KubeSphereVpcPublicSubnet2SubnetCBB8AE29": Object {
+    "VpcPublicSubnet2RouteTableAssociationDD5762D8": Object {
+      "Properties": Object {
+        "RouteTableId": Object {
+          "Ref": "VpcPublicSubnet2RouteTable94F7E489",
+        },
+        "SubnetId": Object {
+          "Ref": "VpcPublicSubnet2Subnet691E08A3",
+        },
+      },
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+    },
+    "VpcPublicSubnet2Subnet691E08A3": Object {
       "Properties": Object {
         "AvailabilityZone": Object {
           "Fn::Select": Array [
@@ -1017,22 +1018,22 @@ Object {
           },
           Object {
             "Key": "Name",
-            "Value": "cdk-kubesphere-demo/KubeSphere/Vpc/PublicSubnet2",
+            "Value": "cdk-kubesphere-demo/Vpc/PublicSubnet2",
           },
         ],
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::Subnet",
     },
-    "KubeSphereVpcVPCGW3241682B": Object {
+    "VpcVPCGWBF912B6E": Object {
       "Properties": Object {
         "InternetGatewayId": Object {
-          "Ref": "KubeSphereVpcIGW08C7B4A6",
+          "Ref": "VpcIGWD7BA715C",
         },
         "VpcId": Object {
-          "Ref": "KubeSphereVpcB890D1D0",
+          "Ref": "Vpc8378EB38",
         },
       },
       "Type": "AWS::EC2::VPCGatewayAttachment",
@@ -1141,14 +1142,14 @@ Object {
               "Arn",
             ],
           },
-          "referencetocdkkubespheredemoKubeSphereVpc638A8914Ref": Object {
-            "Ref": "KubeSphereVpcB890D1D0",
+          "referencetocdkkubespheredemoVpc78426DEDRef": Object {
+            "Ref": "Vpc8378EB38",
           },
-          "referencetocdkkubespheredemoKubeSphereVpcPrivateSubnet1SubnetEAB1606ERef": Object {
-            "Ref": "KubeSphereVpcPrivateSubnet1SubnetFEEA6FFC",
+          "referencetocdkkubespheredemoVpcPrivateSubnet1Subnet85F568DDRef": Object {
+            "Ref": "VpcPrivateSubnet1Subnet536B997A",
           },
-          "referencetocdkkubespheredemoKubeSphereVpcPrivateSubnet2Subnet56C40BA3Ref": Object {
-            "Ref": "KubeSphereVpcPrivateSubnet2Subnet81DBE3CA",
+          "referencetocdkkubespheredemoVpcPrivateSubnet2SubnetCCF8554ARef": Object {
+            "Ref": "VpcPrivateSubnet2Subnet3788AAA1",
           },
         },
         "TemplateURL": Object {
@@ -1165,7 +1166,7 @@ Object {
               },
               "/",
               Object {
-                "Ref": "AssetParameters75e9f2dd8b63803774f165cb1228c1a425b40f88fb9201d3fe3bc1c76f71a901S3Bucket24ABF842",
+                "Ref": "AssetParameters8fac04a56beb222bd94492302aabd6154c5783061b2bc05303e1a5269ab56d90S3BucketFBD1D438",
               },
               "/",
               Object {
@@ -1175,7 +1176,7 @@ Object {
                     "Fn::Split": Array [
                       "||",
                       Object {
-                        "Ref": "AssetParameters75e9f2dd8b63803774f165cb1228c1a425b40f88fb9201d3fe3bc1c76f71a901S3VersionKey9D3470C9",
+                        "Ref": "AssetParameters8fac04a56beb222bd94492302aabd6154c5783061b2bc05303e1a5269ab56d90S3VersionKey67C00C6B",
                       },
                     ],
                   },
@@ -1188,7 +1189,7 @@ Object {
                     "Fn::Split": Array [
                       "||",
                       Object {
-                        "Ref": "AssetParameters75e9f2dd8b63803774f165cb1228c1a425b40f88fb9201d3fe3bc1c76f71a901S3VersionKey9D3470C9",
+                        "Ref": "AssetParameters8fac04a56beb222bd94492302aabd6154c5783061b2bc05303e1a5269ab56d90S3VersionKey67C00C6B",
                       },
                     ],
                   },

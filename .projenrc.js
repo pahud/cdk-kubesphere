@@ -3,9 +3,10 @@ const { AwsCdkConstructLibrary } = require('projen');
 const AUTOMATION_TOKEN = 'GITHUB_TOKEN';
 
 const project = new AwsCdkConstructLibrary({
-  author: 'Pahud',
+  author: 'Pahud Hsieh',
   authorAddress: 'pahudnet@gmail.com',
   cdkVersion: '1.80.0',
+  cdkVersionPinning: true,
   name: 'cdk-kubesphere',
   repositoryUrl: 'https://github.com/pahud/cdk-kubesphere.git',
   cdkDependencies: [
