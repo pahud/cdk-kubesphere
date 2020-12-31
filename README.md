@@ -52,7 +52,7 @@ AWS CDK will helm install the `ks-installer`  on the cluster:
 
 ```sh
 helm install ks-installer \
---set openpitrix.enable=true \
+--set openpitrix.enabled=true \
 --repo https://charts.kubesphere.io/test \
 --namespace=kubesphere-system \
 --generate-name \
