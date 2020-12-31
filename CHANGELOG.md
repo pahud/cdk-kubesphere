@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/pahud/cdk-kubesphere/compare/v0.0.6...v0.0.7) (2020-12-31)
+
+
+### Bug Fixes
+
+* **appstore:** helm chart value for openpitrix should be openpitrix.enabled ([#6](https://github.com/pahud/cdk-kubesphere/issues/6)) ([0b10967](https://github.com/pahud/cdk-kubesphere/commit/0b1096747c08d404b34ea7a4717fc52f8e9c31a4))
+
 ### [0.0.6](https://github.com/pahud/cdk-kubesphere/compare/v0.0.5...v0.0.6) (2020-12-31)
 
 
