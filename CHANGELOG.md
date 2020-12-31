@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/pahud/cdk-kubesphere/compare/v0.0.5...v0.0.6) (2020-12-31)
+
+
+### Features
+
+* **core:** app store support ([a593c00](https://github.com/pahud/cdk-kubesphere/commit/a593c008fb00c6b7cc727795b5bff10e838b2eac))
+
 ### [0.0.5](https://github.com/pahud/cdk-kubesphere/compare/v0.0.4...v0.0.5) (2020-12-30)
 
 ### [0.0.4](https://github.com/pahud/cdk-kubesphere/compare/v0.0.3...v0.0.4) (2020-12-30)
