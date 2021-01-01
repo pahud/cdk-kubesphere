@@ -36,6 +36,7 @@ new KubeSphere(scope: Construct, id: string, props?: KubeSphereProps)
 * **props** (<code>[KubeSphereProps](#cdk-kubesphere-kubesphereprops)</code>)  *No description*
   * **appStore** (<code>boolean</code>)  whether to enable the KubeSphere Application Store(openpitrix). __*Default*__: false
   * **cluster** (<code>[ICluster](#aws-cdk-aws-eks-icluster)</code>)  The existing Amazon EKS cluster(if any). __*Default*__: create a default new cluster
+  * **nodegroupOptions** (<code>[NodegroupOptions](#aws-cdk-aws-eks-nodegroupoptions)</code>)  Options to create the Amazon EKS managed nodegroup. __*Default*__: 2x m5.large on-demand instances
 
 
 
@@ -51,6 +52,7 @@ Name | Type | Description
 -----|------|-------------
 **appStore**? | <code>boolean</code> | whether to enable the KubeSphere Application Store(openpitrix).<br/>__*Default*__: false
 **cluster**? | <code>[ICluster](#aws-cdk-aws-eks-icluster)</code> | The existing Amazon EKS cluster(if any).<br/>__*Default*__: create a default new cluster
+**nodegroupOptions**? | <code>[NodegroupOptions](#aws-cdk-aws-eks-nodegroupoptions)</code> | Options to create the Amazon EKS managed nodegroup.<br/>__*Default*__: 2x m5.large on-demand instances
 
 
 
