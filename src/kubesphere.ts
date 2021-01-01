@@ -1,6 +1,9 @@
 import * as ec2 from '@aws-cdk/aws-ec2';
 import * as eks from '@aws-cdk/aws-eks';
 import * as cdk from '@aws-cdk/core';
+import { Patch } from 'awscdk-81-patch';
+
+Patch.apply();
 
 /**
  * The construct properties for KubeSphere
@@ -16,14 +19,22 @@ export interface KubeSphereProps {
    * @default false
    */
   readonly appStore?: boolean;
+  /**
+   * Options to create the Amazon EKS managed nodegroup
+   * @default - 2x m5.large on-demand instances
+   */
+  readonly nodegroupOptions?: eks.NodegroupOptions;
 }
 
 /**
  * The KubeSphere workload
  */
 export class KubeSphere extends cdk.Construct {
+  private readonly nodegroupOptions?: eks.NodegroupOptions;
   constructor(scope: cdk.Construct, id: string, props: KubeSphereProps = {}) {
     super(scope, id);
+
+    this.nodegroupOptions = props.nodegroupOptions;
 
     const cluster = props.cluster ?? this._createEksCluster();
 
@@ -38,10 +49,14 @@ export class KubeSphere extends cdk.Construct {
   }
   private _createEksCluster(): eks.Cluster {
     const vpc = getOrCreateVpc(cdk.Stack.of(this));
-    return new eks.Cluster(this, 'Cluster', {
+    const cluster = new eks.Cluster(this, 'Cluster', {
       vpc,
       version: eks.KubernetesVersion.V1_18,
     });
+    if (this.nodegroupOptions) {
+      cluster.addNodegroupCapacity('MNG', this.nodegroupOptions);
+    };
+    return cluster;
   }
 }
 
