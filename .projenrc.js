@@ -5,7 +5,7 @@ const AUTOMATION_TOKEN = 'GITHUB_TOKEN';
 const project = new AwsCdkConstructLibrary({
   author: 'Pahud Hsieh',
   authorAddress: 'pahudnet@gmail.com',
-  cdkVersion: '1.81.0',
+  cdkVersion: '1.82.0',
   name: 'cdk-kubesphere',
   repositoryUrl: 'https://github.com/pahud/cdk-kubesphere.git',
   cdkDependencies: [
@@ -14,8 +14,6 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/aws-iam',
     '@aws-cdk/aws-ec2',
   ],
-  deps: ['awscdk-81-patch'],
-  peerDeps: ['awscdk-81-patch'],
   releaseBranches: ['main'],
   dependabot: false,
   python: {

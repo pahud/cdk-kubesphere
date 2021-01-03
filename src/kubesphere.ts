@@ -1,9 +1,6 @@
 import * as ec2 from '@aws-cdk/aws-ec2';
 import * as eks from '@aws-cdk/aws-eks';
 import * as cdk from '@aws-cdk/core';
-import { Patch } from 'awscdk-81-patch';
-
-Patch.apply();
 
 /**
  * The construct properties for KubeSphere

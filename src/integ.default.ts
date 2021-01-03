@@ -21,9 +21,9 @@ export class IntegTesting {
       nodegroupOptions: {
         capacityType: eks.CapacityType.SPOT,
         instanceTypes: [
+          new ec2.InstanceType('t3.large'),
           new ec2.InstanceType('m5.large'),
           new ec2.InstanceType('c5.large'),
-          new ec2.InstanceType('t3.large'),
         ],
         desiredSize: 3,
       },
