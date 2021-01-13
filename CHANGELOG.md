@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.17](https://github.com/pahud/cdk-kubesphere/compare/v0.0.16...v0.0.17) (2021-01-13)
+
 ### [0.0.16](https://github.com/pahud/cdk-kubesphere/compare/v0.0.15...v0.0.16) (2021-01-12)
 
 ### [0.0.15](https://github.com/pahud/cdk-kubesphere/compare/v0.0.14...v0.0.15) (2021-01-11)
