@@ -15,6 +15,7 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/aws-ec2',
   ],
   releaseBranches: ['main'],
+  defaultReleaseBranch: 'main',
   dependabot: false,
   python: {
     distName: 'cdk-kubesphere',
