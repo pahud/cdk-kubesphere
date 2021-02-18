@@ -6,6 +6,7 @@ const project = new AwsCdkConstructLibrary({
   author: 'Pahud Hsieh',
   authorAddress: 'pahudnet@gmail.com',
   cdkVersion: '1.82.0',
+  description: 'CDK construct library to deploy KubeSphere on AWS',
   name: 'cdk-kubesphere',
   repositoryUrl: 'https://github.com/pahud/cdk-kubesphere.git',
   cdkDependencies: [
