@@ -1,6 +1,4 @@
-const { AwsCdkConstructLibrary } = require('projen');
-const { Automation } = require('projen-automate-it');
-
+const { AwsCdkConstructLibrary, DependenciesUpgradeMechanism } = require('projen');
 
 const AUTOMATION_TOKEN = 'PROJEN_GITHUB_TOKEN';
 
@@ -17,9 +15,17 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/aws-iam',
     '@aws-cdk/aws-ec2',
   ],
-  releaseBranches: ['main'],
   defaultReleaseBranch: 'main',
-  dependabot: false,
+  depsUpgrade: DependenciesUpgradeMechanism.githubWorkflow({
+    workflowOptions: {
+      labels: ['auto-approve', 'auto-merge'],
+      secret: AUTOMATION_TOKEN,
+    },
+  }),
+  autoApproveOptions: {
+    secret: 'GITHUB_TOKEN',
+    allowedUsernames: ['pahud'],
+  },
   python: {
     distName: 'cdk-kubesphere',
     module: 'cdk_kubesphere',
@@ -30,27 +36,11 @@ const project = new AwsCdkConstructLibrary({
     'kubernetes',
     'eks',
   ],
-  deps: [
-    'projen-automate-it',
-  ],
-  bundledDeps: [
-    'projen-automate-it',
-  ],
   catalog: {
     announce: false,
     twitter: 'pahudnet',
   },
 });
-
-
-const automation = new Automation(project, {
-  automationToken: AUTOMATION_TOKEN,
-});
-
-automation.autoApprove();
-automation.autoMerge();
-automation.projenYarnUpgrade();
-
 
 const common_exclude = ['cdk.out', 'cdk.context.json', 'images', 'yarn-error.log'];
 project.npmignore.exclude(...common_exclude);
