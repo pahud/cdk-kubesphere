@@ -68,8 +68,13 @@
       "type": "build"
     },
     {
+      "name": "npm-check-updates",
+      "version": "^11",
+      "type": "build"
+    },
+    {
       "name": "projen",
-      "version": "^0.16.12",
+      "version": "^0.22.8",
       "type": "build"
     },
     {
@@ -84,10 +89,6 @@
     {
       "name": "typescript",
       "type": "build"
-    },
-    {
-      "name": "projen-automate-it",
-      "type": "bundled"
     },
     {
       "name": "@aws-cdk/aws-ec2",
@@ -132,10 +133,6 @@
     {
       "name": "@aws-cdk/core",
       "version": "^1.82.0",
-      "type": "runtime"
-    },
-    {
-      "name": "projen-automate-it",
       "type": "runtime"
     }
   ],
